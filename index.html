@@ -78,8 +78,8 @@
   <title>ASTRA: ADMM-Accelerated Topology Reconfiguration for Dynamic Satellite Constellations - João Norberto, Ricardo N. Ferreira, Cláudia Soares | Academic Research</title>
   
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico"> -->
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -407,66 +407,89 @@
     </div>
   </div>
 </section>
-
 <!-- End paper Contributions -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+<!-- Paper results -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <p>
+            State-of-the-art comparison. In Table 1, we summarize the results of ASTRA and the different
+            methods we compare it with, in the Iridium-like constellation. We see that +Grid and xGrid are the
+            fastest methods, although the latter presents the lowest connectivity metrics and the highest shortest
+            path. Both Motif and DoTD achieve the best network connectivity out of all the methods,
+            although Motif takes a much longer time to achieve this. Both GUTO and ASTRA achieve smaller
+            average shortest path length, and comparable connectivity with DoTD and Motif. Furthermore,
+            GUTO and ASTRA are equivalent, with ASTRA requiring approximately 22% less execution time.
+          </p>
+          <table>
+              <tr>
+                  <td>Metrics</td>
+                  <td>E \(\uparrow\)</td>
+                  <td>A-Deg  \(\uparrow\)</td>
+                  <td>CC \(\downarrow\)</td>
+                  <td>A-SP   \(\downarrow\)</td>
+                  <td>Time (s) \(\downarrow\)</td>
+              </tr>
+              <tr>
+                  <td>+Grid</td>
+                  <td>130</td>
+                  <td>3.94</td>
+                  <td>1</td>
+                  <td>{\ul 4.036}</td>
+                  <td>{	extbf{0.001}}</td>
+              </tr>
+              <tr>
+                  <td>\(\times\)Grid</td>
+                  <td>124</td>
+                  <td>3.76</td>
+                  <td>1</td>
+                  <td>4.978</td>
+                  <td>\textbf{0.001}</td>
+              </tr>
+              <tr>
+                  <td>DoTD</td>
+                  <td>{\ul 131}</td>
+                  <td>{\ul 3.97}</td>
+                  <td>1</td>
+                  <td>4.412</td>
+                  <td>0.023</td>
+              </tr>
+              <tr>
+                  <td>Motif</td>
+                  <td>\textbf{132}</td>
+                  <td>\textbf{4.00}</td>
+                  <td>1</td>
+                  <td>4.292</td>
+                  <td>1.326</td>
+              </tr>
+              <tr>
+                  <td>GUTO</td>
+                  <td>128</td>
+                  <td>3.88</td>
+                  <td>1</td>
+                  <td>\textbf{3.767}</td>
+                  <td>0.091</td>
+              </tr>
+              <tr>
+                  <td>ASTRA</td>
+                  <td>128</td>
+                  <td>3.88</td>
+                  <td>1</td>
+                  <td>\textbf{3.767}</td>
+                  <td>0.071</td>
+              </tr>
+          </table>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-
-<!-- End video carousel -->
-
-
-
-
-
+<!-- End paper results -->
 
 <!-- Paper poster -->
 <section class="hero is-small is-light">
@@ -482,8 +505,6 @@
     </div>
   </section>
 <!--End paper poster -->
-
-
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">

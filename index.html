@@ -336,6 +336,78 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Paper Contributions -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Main Contributions</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recent work [41] formulated dynamic constellation topology
+            reconfiguration as a convex optimization problem with flexible
+            utility design, and showed that generic online methods such as
+            OGD and OCG can be applied to adapt to time-varying settings.
+            Our contribution is not a new problem formulation. Instead, we
+            make that formulation substantially more practical and
+            theoretically sharper through a problem-specific optimization
+            treatment and stronger guarantees. Specifically, we:
+          </p>
+
+          <ul>
+            <li>
+              <strong>Derive a problem-structured ADMM solver for topology
+              optimization of satellite networks.</strong>
+              We show that the topology optimization problem of Norberto et al.
+              [41] can be solved offline with an ADMM-based algorithm tailored
+              to the Laplacian constraints, replacing generic solver calls with
+              problem-specific updates.
+            </li>
+
+            <li>
+              <strong>Accelerate the online methods.</strong>
+              Building on the observation of Norberto et al. that OGD and OCG
+              are applicable to this setting, we derive ADMM-based subroutines
+              for their constrained updates, yielding substantially cheaper
+              online iterations than generic optimization pipelines.
+            </li>
+
+            <li>
+              <strong>Establish stronger regret guarantees for this topology
+              objective.</strong>
+              We prove that, for a useful class of entry-wise nonzero utility
+              matrices, the objective is strongly convex. This implies
+              logarithmic static regret for OGD against any fixed topology
+              comparator, strengthening the theoretical understanding of
+              online topology reconfiguration in this setting.
+            </li>
+
+            <li>
+              <strong>Connect the theory to the implemented inexact solver.</strong>
+              We further analyze dynamic regret under inexact ADMM inner loops
+              via feasible-shadow arguments, and relate the regret degradation
+              to infeasibility and ADMM primal residuals.
+            </li>
+
+            <li>
+              <strong>Validate beyond idealized constellation assumptions.</strong>
+              In contrast to classical topology-design methods that rely on
+              full deployment or uniform orbital spacing, we show that the
+              resulting framework remains effective on realistic Starlink data
+              under partial deployment and non-uniform spacing. On real
+              Starlink data, ASTRA preserves the connectivity quality of SOTA
+              and attains the largest number of fully connected topologies,
+              while offering substantially lower computational cost.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- End paper Contributions -->
+
 
 <!-- Image carousel -->
 <section class="hero is-small">

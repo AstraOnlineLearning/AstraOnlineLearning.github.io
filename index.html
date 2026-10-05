@@ -419,11 +419,15 @@
 
         <div class="content has-text-justified">
 
+          <!-- Metrics subsection -->
+          <h3 class="title is-4">Considered Metrics</h3>
+          We compare our method with the state-of-the-art on both synthetic and real-world data and present metrics for the graphs generated, viz, total number of edges in the graph, ``E''; average degree of a satellite, ``A-Deg''; number of connected components, ``CC''; average shortest path, ``A-SP''; and the wall clock time in seconds, ``Time (s)''. Wall clock time experiments were executed on an M5 Pro MacBook Pro CPU, with Starlink metric experiments executed in 1 core of an Intel(R) Xeon(R) Gold 6330. Our synthetic dataset consists of an Iridium-like constellation with six elliptical orbital planes, each one with eleven satellites per plane. For real-world data, we consider a constellation with 1591 Starlink satellites, distributed across 50 orbital planes, containing between 14 and 64 satellites, whose state was retrieved every five minutes, during a period of 24 hours.
+          
           <!-- Iridium subsection -->
           <h3 class="title is-4">Iridium-like Constellation</h3>
 
           <p>
-            State-of-the-art comparison. In the following table we summarize
+            In the following table we summarize
             the results of ASTRA and the different methods we compare it with
             in an Iridium-like constellation. We see that +Grid and &times;Grid
             are the fastest methods, although the latter presents the lowest

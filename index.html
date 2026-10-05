@@ -594,6 +594,38 @@
               </tr>
             </tbody>
           </table>
+
+          <!-- Wall-clock time subsection -->
+          <h3 class="title is-4 mt-6">Wall-clock time</h3>
+          <p>
+            In terms of wall-clock time, ASTRA achieves 83% faster execution time on average when compared with DoTD and 15% when compared with GUTO. Hence, ASTRA should be viewed as an efficient solver that retains the desirable connectivity behavior of GUTO under realistic partial-deployment and non-uniform-spacing conditions. Both +Grid and \(\times\)Grid are significantly faster than other methods, due to the trade-off between computational cost and how dynamic an approach is.
+          </p>
+          <table>
+            <caption>
+              Average time and respective std each method takes to propose a topology
+              (Starlink), after 10 runs. +Grid and ×Grid are the fastest methods.
+            </caption>
+            <thead>
+              <tr>
+                <th>Algorithm</th>
+                <th>+Grid</th>
+                <th>×Grid</th>
+                <th>DoTD</th>
+                <th>GUTO</th>
+                <th>ASTRA</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Time (s)</td>
+                <td>0.021 ± 0.001</td>
+                <td>0.026 ± 0.001</td>
+                <td>3262.927 ± 48.097</td>
+                <td>665.027 ± 2.093</td>
+                <td>567.949 ± 5.615</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
